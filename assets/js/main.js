@@ -1,4 +1,4 @@
-console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
+
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -10,6 +10,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     });
 
     $(document).ready(function() {
+        $('#logo').addClass('hide');
 
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
@@ -28,6 +29,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
                 $('.scroll-up').fadeIn();
+                $('#logo').removeClass('hide');
             } else {
                 $('.scroll-up').fadeOut();
             }
@@ -847,5 +849,3 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
     });
 })(jQuery);
-
-
